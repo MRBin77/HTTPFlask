@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <title>Website Template</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+</head>
+<body>
+
+   <div class="container1">
+      <div class="row">
+          <div class="col-md-offset-3 col-md-6">
+             <form class="form-horizontal" method="POST" action="/logout">
+                 <div class="form-group">
+                   <button type="submit" class="btn btn-default">Выйти</button>
+                 </div>
+                <span class="heading">МОЙ ПРОФИЛЬ</span>
+                <div>
+                    <title>Upload new File</title>
+                    <h1>Upload new File</h1>
+                    <form method=post enctype=multipart/form-data>
+                      <input type=file name=file>
+                      <input type=submit value=Upload>
+                    </form>
+                 </div>
+             </form>
+          </div>
+       </div><!-- /.row -->
+   </div>
+</body>
+</html>
